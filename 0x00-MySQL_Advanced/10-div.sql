@@ -11,9 +11,9 @@ DETERMINISTIC
 BEGIN
 	DECLARE container FLOAT;
 	IF b = 0 THEN
-		return O;
-	END IF;
-	SET container = (a * 1.0) / b;
-	RETURN container;
+		RETURN 0;
+        END IF;
+        SET container = (a * 1.0) / b;
+        RETURN container;
 END;$$
 DELIMITER ;
